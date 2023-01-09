@@ -98,6 +98,8 @@ ul li::marker {
   background-color: var(--verygrey);
   height: 600px;
   width: 100%;
+  background-image: url("../images/picture.jpg");
+  max-width: 1600px;
 }
 
 .banner__writing {
@@ -154,6 +156,18 @@ ul li::marker {
   list-style-type: none;
   gap: 30px;
 }
+
+.text__icons-background {
+  width: 270px;
+  height: 120px;
+  background-color: var(--verywhite);
+}
+
+.text__icons {
+  width: 100%;
+   
+}
+
 
 .text__title-appearance {
   color: var(--darkgrey);
