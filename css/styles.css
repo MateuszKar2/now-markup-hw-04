@@ -275,7 +275,20 @@ ul li::marker {
               0px 1px 1px rgba(0, 0, 0, 0.14),
               0px 2px 1px rgba(0, 0, 0, 0.2);
 }
- 
+.team__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ourclients__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+
+} 
+
+
 .footer {
   background-color: var(--verygrey);
   width: 100%;
