@@ -81,6 +81,7 @@ ul li::marker {
   align-items: center;
   margin-left: 371px;
 }
+ 
 
 .header__contacts-apperarance {
     font-family: "Roboto";
@@ -89,9 +90,20 @@ ul li::marker {
     font-size: 14px;
     line-height: 16px;
     color: var(--grey);
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .header__contacts-apperarance:first-child {
-    padding-right: 50px;
+    padding-right: 50px; 
+}
+.header__contacts-apperarance:hover,
+.header__contacts-apperarance:focus {
+  color: var(--blue);
+}
+
+.header__icons {
+  fill: var(--grey);
 }
 
 .banner {
@@ -99,6 +111,8 @@ ul li::marker {
   height: 600px;
   width: 100%;
   background-image: url("../images/picture.jpg");
+  background-size: cover;
+  background-position: 50%, 50%;
   max-width: 1600px;
 }
 
@@ -161,12 +175,17 @@ ul li::marker {
   width: 270px;
   height: 120px;
   background-color: var(--verywhite);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
-.text__icons {
+/*.text__icons {
   width: 100%;
+  box-sizing: border-box;
    
-}
+}*/
 
 
 .text__title-appearance {
@@ -178,7 +197,6 @@ ul li::marker {
   font-size: 16px;
   text-transform: uppercase;
   padding-bottom: 10px;
- 
 }
 
 .text__appearance {
@@ -279,14 +297,27 @@ ul li::marker {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.ourclients__icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   display: inline-block;
+}
+.team__icon-proffesion {
+  display: flex;
+  flex-direction: row;
+}
+.team__icon-single {
+  height: 44px;
+  width: 44px;
+}
 
-} 
+.ourclients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ourclients__icon-single {
+  width: 170px;
+  height: 92px;
+}
 
 
 .footer {
