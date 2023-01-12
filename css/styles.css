@@ -2,6 +2,7 @@
   --darkgrey: #212121;
   --grey: #757575;
   --verygrey: #2F303A;
+  --greyicon: #afb1b8;
   --white: #fff;
   --blue: #2196f3;
   --verywhite: #f5f4fa;
@@ -13,9 +14,6 @@
    
 }
 
-ul li::marker {
-  color: var(--white);
-}
 .link__no {
   text-decoration: none;
   list-style-type: none;
@@ -94,13 +92,17 @@ ul li::marker {
     align-items: center;
     gap: 10px;
 }
+
+.header__contacts-apperarance:hover,
+.header__contacts-apperarance:focus {
+  cursor: pointer;
+  fill: var(--blue);
+}
+
 .header__contacts-apperarance:first-child {
     padding-right: 50px; 
 }
-.header__contacts-apperarance:hover,
-.header__contacts-apperarance:focus {
-  color: var(--blue);
-}
+
 
 .header__icons {
   fill: var(--grey);
@@ -181,11 +183,9 @@ ul li::marker {
   margin-bottom: 30px;
 }
 
-/*.text__icons {
+.text__icons {
   width: 100%;
-  box-sizing: border-box;
-   
-}*/
+}
 
 
 .text__title-appearance {
@@ -297,26 +297,58 @@ ul li::marker {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: inline-block;
+  padding-bottom: 30px;
+  gap: 10px;
 }
-.team__icon-proffesion {
-  display: flex;
-  flex-direction: row;
-}
+ 
 .team__icon-single {
   height: 44px;
   width: 44px;
+  fill: var(--greyicon);
+  border-radius: 50%;
+}
+.team__icon-single:hover {
+  cursor: pointer;
+  background-color: var(--blue);
+  fill: var(--white);
 }
 
-.ourclients {
+.ourclients__title {
+  text-align: center;
+  font-family:"Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--darkgrey); 
+  margin: 0;
+  padding-bottom: 50px;
+  padding-top: 94px;
+}
+
+.ourclients__position {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 30px;
+  padding-bottom: 94px;
 }
 
 .ourclients__icon-single {
   width: 170px;
   height: 92px;
+  fill: var(--greyicon);
+  border-radius: 4px;
+  border: 1px solid var(--greyicon);
+}
+.ourclients__icon-single:hover {
+  cursor: pointer;
+  border-color: var(--blue);
+  fill: var(--blue);
+}
+
+.ourclients__icon-single:hover,
+.ourclients__icon-single:focus {
+  color: var(--blue);
 }
 
 
@@ -326,8 +358,12 @@ ul li::marker {
  
 }
 
-.footer__position {
+.footer__left {
   padding-top: 60px;
+}
+.footer__left h3 {
+  margin: 0;
+  padding-bottom: 27px;
 }
 
 .footer__address-position {
@@ -367,8 +403,51 @@ ul li::marker {
   font-size: 26px;
   line-height: 31px;
   color: var(--white);
-  padding-top: 20px;
 }
+.footer__position {
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.footer__center {
+  padding-left: 70px;
+  padding-top: 72px;
+}
+
+
+.footer__center-title {
+  text-transform: uppercase;
+  font-family:"Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  margin: 0;
+}
+
+.footer__icon {
+  padding-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.footer__icon-single:hover {
+  cursor: pointer;
+  background-color: var(--blue);
+}
+
+
+.footer__icon-single{
+  height: 44px;
+  width: 44px;
+  fill: var(--white);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
  
 .portfolio__list {
   list-style-type: none;
@@ -410,9 +489,6 @@ ul li::marker {
   flex-wrap: wrap;
   gap: 30px;
   padding: 0;
-}
-.portfolio__picture {
-  flex-basis: calc((100% - 60px) / 3);
 }
 
 .portfolio__picture-title {
